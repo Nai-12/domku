@@ -81,7 +81,6 @@ nav h2 {
 nav ul {
   position: absolute;
   left: 0;
-  min-height: 100vh;
   height: 100vh;
   background-color: var(--color-standar-white);
   display: flex;
@@ -104,7 +103,7 @@ nav ul {
 nav ul input {
   position: absolute;
   right: 20px;
-  top: 36rem;
+  top: 40rem;
   outline: none;
   border: none;
   padding: 5px 10px;
