@@ -81,6 +81,7 @@ nav h2 {
 nav ul {
   position: absolute;
   left: 0;
+  min-height: 100vh;
   height: 100vh;
   background-color: var(--color-standar-white);
   display: flex;
