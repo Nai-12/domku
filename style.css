@@ -156,6 +156,12 @@ nav a {
   border-radius: 50px;
   background-color: var(--color-navbar-bg);
 }
+
+@media screen and (max-width: 850px) {
+  .all-m2 {
+    left: 30.5%;
+  }
+}
 /* All Menu */
 
 /* Info Saldo */
