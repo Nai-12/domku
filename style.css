@@ -260,3 +260,36 @@ nav a {
 }
 
 /* Info Saldo */
+
+/* IMG Slider */
+
+.img-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 8rem;
+  overflow-x: auto;
+  position: relative;
+  box-sizing: border-box;
+  animation-name: img;
+  animation-duration: 0.4s;
+}
+
+.img-slide img {
+  width: 90%;
+  margin: 0 10px;
+  border-radius: 20px;
+  vertical-align: middle;
+}
+
+/* @keyframes img {
+  0% {
+    opacity: 4;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+/* IMG Slider */

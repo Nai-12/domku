@@ -19,3 +19,20 @@ burgerNav.addEventListener("click", function () {
 navBtn.onclick = () => {
   Nav.classList.remove("show");
 };
+
+let slideImage = 0;
+slideShow();
+
+function slideShow() {
+  let i;
+  let slider = document.getElementsByClassName("slider");
+  for (i = 0; i < slider.length; i++) {
+    slider[i].style.display = "none";
+  }
+  slideImage++;
+  if (slideImage > slider.length) {
+    slideImage = 1;
+  }
+  slider[slideImage - 1].style.display = "block";
+  setTimeout(slideShow, 5000);
+}
