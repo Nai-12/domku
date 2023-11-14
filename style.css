@@ -7,12 +7,17 @@
 
 body {
   height: 10000px;
+  background-color: var(--color-new);
+  color: var(--color-white);
 }
 
 :root {
-  --color-navbar-bg: #1af004;
-  --color-standar-white: white;
+  --color-navbar-bg: #292a2b;
+  --color-standar-white: #252525;
+  --color-new: #0d1117;
   --font-family-c-1: "PT Sans", sans-serif;
+  --color-white: white;
+  --color-new-blue: #04baf0;
 }
 
 /* Navbar */
@@ -35,7 +40,7 @@ nav {
   left: 0;
   padding: 10px 20px;
   border-radius: 20px;
-  box-shadow: 0px 0px 5px gray;
+  /* box-shadow: 0px 0px 5px gray; */
   z-index: 999;
   transition: 0.4s;
 }
@@ -46,6 +51,13 @@ nav {
 
 nav h2 {
   font-family: var(--font-family-c-1);
+  color: var(--color-new-blue);
+  text-shadow: 0px 0px 10px var(--color-new-blue);
+}
+
+nav h2 span {
+  color: var(--color-white);
+  text-shadow: 0px 0px 10px var(--color-white);
 }
 
 .bar {
@@ -65,13 +77,14 @@ nav h2 {
 
 .bar span {
   height: 2px;
-  background-color: black;
+  background-color: var(--color-white);
   border-radius: 20px;
   width: 25px;
 }
 
 .bar span:nth-child(3) {
   width: 18px;
+  background-color: var(--color-new-blue);
 }
 
 .bar span:nth-child(4) {
@@ -93,6 +106,7 @@ nav ul {
   transform: translate(-110%);
   transition: 0.4s;
   z-index: 9999;
+  margin-top: 10rem;
 }
 
 .show {
@@ -103,11 +117,13 @@ nav ul {
 nav ul input {
   position: absolute;
   right: 20px;
-  top: 50%;
+  top: 45%;
   outline: none;
   border: none;
   padding: 5px 10px;
+  background-color: var(--color-navbar-bg);
   font-family: var(--font-family-c-1);
+  color: var(--color-white);
 }
 
 nav li {
@@ -118,7 +134,7 @@ nav li {
 nav a {
   text-decoration: none;
   font-family: var(--font-family-c-1);
-  color: black;
+  color: var(--color-white);
 }
 
 /* Navbar */
@@ -138,8 +154,8 @@ nav a {
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  color: black;
-  box-shadow: 0px 0px 5px gray;
+  color: var(--color-white);
+  /* box-shadow: 0px 0px 5px gray; */
 }
 
 @media screen and (max-width: 850px) {
@@ -178,7 +194,7 @@ nav a {
   background-color: var(--color-standar-white);
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0px 0px 5px gray;
+  /* box-shadow: 0px 0px 5px gray; */
 }
 
 .country {
@@ -188,7 +204,7 @@ nav a {
   flex-direction: row;
   background-color: var(--color-standar-white);
   padding: 10px;
-  box-shadow: 0px 0px 5px gray;
+  /* box-shadow: 0px 0px 5px gray; */
   border-radius: 10px;
 }
 
@@ -208,7 +224,7 @@ nav a {
   margin-top: 15px;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 0px 0px 5px gray;
+  /* box-shadow: 0px 0px 5px var(--color-new-blue); */
   gap: 30px;
 }
 
@@ -220,7 +236,7 @@ nav a {
 }
 
 .s-top a {
-  color: black;
+  color: white;
 }
 
 .s-bottom {
